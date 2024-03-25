@@ -1,0 +1,177 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: backgroundAnimation 10s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+input[type="text"], input[type="button"] {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px; /* Adjust the width as needed */
+  border: 2px solid #4CAF50; /* Added border */
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position:'relative';
+  left:60px;
+}
+
+input[type="submit"]{
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px; /* Adjust the width as needed */
+  border: 2px solid #4CAF50; /* Added border */
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="text"]:focus, input[type="button"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+input[type="password"]{
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px; /* Adjust the width as needed */
+  border: 2px solid #4CAF50; /* Added border */
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="password"]:focus{
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+}
+/* Add this CSS to your App.css file */
+/* .inputContainer {
+  position: relative;
+  padding-top: 15px;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #999;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.inputContainer input:focus + label,
+.inputContainer input:not(:placeholder-shown) + label {
+  top: -20px;
+  left: 0;
+  color: #007bff;
+  font-size: 12px;
+}
+
+.inputContainer input {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 25px;
+} */
+/* Add this CSS to your App.css file */
+/* App.css */
+.inputContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputContainer input {
+  width: 84%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 15px 10px 5px 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  background: transparent;
+  z-index: 1;
+}
+
+.inputContainer input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.inputContainer label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+  color: #999;
+  background-color: white;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.inputContainer input:focus + label,
+.inputContainer input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  color: #007bff;
+  font-size: 12px;
+}
+
+/* Style for the form border */
+.z {
+  border:2px solid #0000;
+  padding: 23px;
+  border-radius: 8px;
+  background: white;
+  width:34%;
+  max-width: 350px; /* Adjust as needed for larger screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style for the form border */
+@media (max-width: 768px) {
+  .z {
+    width: 90%; /* Adjust width on smaller screens */
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+  }
+}

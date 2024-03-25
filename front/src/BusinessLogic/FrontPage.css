@@ -1,0 +1,14 @@
+/* .AppName{
+    position:relative;
+    } */
+    .divPosition{
+      display:flex;
+      justify-content: center;
+    }
+    @media (max-width: 700px) {
+      .divPosition {
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+      }
+    }

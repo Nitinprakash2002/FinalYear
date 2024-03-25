@@ -1,0 +1,67 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative; /* Added */
+  background-color:#ffffff;
+}
+
+.logo {
+  height: 50px; /* Adjust as needed */
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-item {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative; /* Added */
+    background-color:#ffffff;
+    width:100%;
+  }
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 60px; /* Adjust based on the height of your logo */
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    display: none;
+  }
+
+  .navbar-menu.is-active {
+    display: flex;
+  }
+}

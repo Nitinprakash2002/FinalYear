@@ -1,0 +1,29 @@
+/* .cardStyle {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    position: relative;
+    top: 100px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+.card{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:4%;
+  padding:4%;
+  margin:20px;
+}
+@media (max-width: 768px) {
+    .card {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        width: 80%;
+        padding: 4px;
+    }
+}

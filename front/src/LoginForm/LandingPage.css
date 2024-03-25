@@ -1,0 +1,130 @@
+.back{
+    width:100px;
+    height:100px;
+    position:relative;
+  }
+  .frontBackground{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+  }
+  .card{
+   position:relative;
+  }
+  .signUP{
+    width:100px;
+    height:50px;
+    background-color:rgb(187, 53, 53);
+    position:absolute;
+    top:300px;
+    left:80px;
+    cursor: pointer;
+  }
+  .logIn{
+    width:100px;
+    height:50px;
+    background-color:rgb(79, 189, 79);
+    position:absolute;
+    top:300px;
+    left:230px;
+    cursor:pointer;
+  }
+  .frame12-headlineandsubhead {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    position:absolute;
+    left:200px;
+    top:200px;
+  }
+  .frame12-text {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 56px;
+    font-style: SemiBold;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 64px;
+    font-stretch: normal;
+    text-decoration: none;
+    overflow:hidden;
+  }
+  .frame12-text2 {
+    color: rgba(255, 255, 255, 1);
+    width: 633px;
+    height: auto;
+    font-size: 24px;
+    font-style: Regular;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .collectionButton{
+    display:flex;
+    position:absolute;
+    top:350px;
+    left:200px;
+  }
+  .buttonStyle{
+      width: 250px;
+      height: 72px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      align-items: flex-start;
+      flex-shrink: 0;
+      border-radius: 40px;
+      background-color: rgba(17, 17, 17, 1);
+      color:white;
+      margin:50px;
+      font-family:'Courier New', Courier, monospace;
+      cursor: pointer;
+    }
+    .textStyling{
+      position:relative;
+      top:25px;
+      left:90px;
+      font-size:110%;
+    }
+    @media screen and (max-width:850px)
+    {
+      .frontBackground{
+        max-width:100%;
+        height:100%;
+        
+      }
+      .frame12-headlineandsubhead {
+        position:absolute;
+        left:250px;
+        width:400px;
+      }
+      .collectionButton{
+        position:absolute;
+        left:100px;
+      }
+    }
+    @media screen and (max-width:850px)
+    {
+      .frame12-headlineandsubhead
+      {
+        position:absolute;
+        width:100px;
+        left:170px;
+      }
+      .collectionButton{
+        display:grid;
+        position:absolute;
+        left:50px;
+      }
+      .frame12-text2 {
+        width:250px;
+      }
+    }
+    

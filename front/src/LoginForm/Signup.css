@@ -1,0 +1,33 @@
+.colourChange{
+    color:red;
+    font-size:75%;
+    position:relative;
+    left:40px;
+}
+.formContain{
+    width:450px;
+    height:700px;
+    background-color:white;
+    margin:0 auto;
+    position:relative;
+    top:100px;
+}
+.formData{
+    position:relative;
+    left:60px;
+    
+}
+@media screen and (max-width:390px)
+{
+    .formContain{
+        left:30px;
+        top:70px;
+    }
+}
+@media (min-width:400px) and (max-width:500px)
+{
+    .formContain{
+        left:30px;
+        top:200px;
+    }
+}

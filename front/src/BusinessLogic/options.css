@@ -1,0 +1,17 @@
+.cards1{
+    width:300px;
+    height:300px;
+    position:relative;
+    background-color:grey;
+    position:relative;
+    margin:50px;
+    top:300px;
+    display:flex;
+    justify-content: center;
+    cursor:pointer;
+}
+.textDesign{
+    color:white;
+    position:absolute;
+    top:130px;
+}
