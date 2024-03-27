@@ -817,6 +817,32 @@
         "desc": "At a distance of 11 Kms from Bangalore City Railway Station, Lumbini Garden is a lake park situated on Nagawara Lake and an amusement park located on Outer Ring Road near Hebbal flyover. The park offers a variety of attractions including boating facilities on the lake, making it a popular activity for visitors. The park, which stretches over 1.5 km along the outer ring road, provides a pleasant hangout spot for visitors. In addition to boating, Lumbini Gardens features a wave pool, kids' play area, rides for children, bungee jumping, food stalls, and more. The park also houses a high-tech nursery. One of the notable attractions in the park is a 25-meter statue of Buddha. Timings for Lumbini Gardens are from 11 AM to 7 PM.",
         "EntryFee": "Free",
         "Timings": "11 AM to 7 PM"
-      }
+      },
+      {
+        "id": "32",
+        "category": "Wildlife",
+        "place": "Bandipur National Park",
+        "distance": "220 Kms From Bangalore City",
+        "placeLocation": "Chamarajanagar",
+        "TransportationOptions": "Private Vehicle / Cab",
+        "images": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2012-bandipur-tiger.jpg/284px-2012-bandipur-tiger.jpg",
+        "desc": "At a distance of 220 km from Bangalore City, Bandipur National Park is one of the well preserved national parks in India. It is located in the Chamarajanagar district of Karnataka. Bandipur is one of the top attractions you must include in wildlife tour packages in India and among the best places to visit near Bangalore.\n\nIt is one of the 15 sanctuaries belonging to the Project Tiger Scheme. Bandipur became one of India's first Tiger Reserves and in 1974, was declared a National Park under the Wildlife Protection Act. Covering an area of about 874 sq km, this park is an important component of the Nilgiri Biosphere Reserve and is contiguous with the Mudumalai National Park in Tamil Nadu, the Wynad Wildlife Sanctuary in Kerala, and the Nagarhole National Park in the North. Together, these parks constitute the India's largest biosphere reserve known as the 'Nilgiri Biosphere Reserve'.\n\nBandipur National Park boasts of a substantial tiger population and serves as an important corridor for elephants migrating between the Western and Eastern Ghats. It is part of the Nilgiri Biosphere Reserve along with Nagarhole National Park, Mudumalai National Park, and Wayanad Wildlife Sanctuary. The park is home to other threatened species like Indian elephants, gaurs, tigers, sloth bears, muggers, Indian rock pythons, four-horned antelopes, and dholes. The park is famous for the wildlife safari that is conducted in the dense forests. The safaris are the best way to explore the wilderness and enjoy the sight of exotic wildlife species.\n\nThe vegetation of the park is tropical and deciduous. The park enjoys a moderate climate throughout the year with temperatures ranging from 24°C to 28°C in summer and 10°C to 20°C in winter. The park is open throughout the year. However, the best time to visit Bandipur National Park is from October to March when the weather is pleasant, and the chances of spotting wildlife are higher.",
+        "Timings": "6 AM - 9 AM & 3:30 PM - 5:30 PM",
+        "EntryFee": "Rs. 300 for Indians & Rs. 1,100 for foreigners (Jeep Safari)"
+    },
+    {
+        "id": "35",
+        "category": "Wildlife",
+        "place": "Nagarhole National Park",
+        "distance": "220 Kms From Bangalore",
+        "placeLocation": "Kodagu & Mysore Districts",
+        "TransportationOptions": "Private Vehicle / Cab",
+        "images": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Elephant_Herd_Nagarhole_Karnataka_Apr22_D72_23799.jpg/400px-Elephant_Herd_Nagarhole_Karnataka_Apr22_D72_23799.jpg",
+        "desc": "Nagarhole National Park, also known as Rajiv Gandhi National Park, is situated in the Kodagu and Mysore districts of Karnataka. It is part of the Nilgiri Biosphere Reserve and is home to a rich variety of flora and fauna, including tigers, elephants, leopards, and numerous bird species. The park is renowned for its scenic beauty, dense forests, and diverse wildlife. Visitors can enjoy wildlife safaris, nature walks, and birdwatching tours in this pristine wilderness area.",
+        "Timings": "Open Daily, Timings Vary",
+        "EntryFee": "Rs. 300 for Indians & Rs. 1,100 for foreigners"
+    }
+    
+    
 ]      
       

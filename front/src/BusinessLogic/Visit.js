@@ -40,6 +40,21 @@ function Visit()
             const temporary=event.target.value;
             Navigate('/SelectOptions/visitInput/Results',{state:{temporary}});
         }
+        else if(event.target.value==='Wildlife')
+        {
+            const temporary=event.target.value;
+            Navigate('/SelectOptions/visitInput/Results',{state:{temporary}});
+        }
+        else if(event.target.value==='Lake')
+        {
+            const temporary=event.target.value;
+            Navigate('/SelectOptions/visitInput/Results',{state:{temporary}});
+        } 
+        else if(event.target.value==='Historical')
+        {
+            const temporary=event.target.value;
+            Navigate('/SelectOptions/visitInput/Results',{state:{temporary}});
+        }           
 
     }
     return(

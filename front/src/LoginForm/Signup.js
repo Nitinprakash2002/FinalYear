@@ -111,7 +111,7 @@ function Signup()
         {
             const prevPass=document.getElementById('12').value;
             const newPass=document.getElementById('13').value;
-            if(newPass!=prevPass)
+            if(newPass!==prevPass)
             {
                 setRematch("Passwords doesn't match");
                 document.getElementById('13a').style.color="red";
@@ -131,7 +131,7 @@ function Signup()
     {
         setChange(1);
     }
-    if(change==1)
+    if(change===1)
     {
         return <LandingPage></LandingPage>
     }

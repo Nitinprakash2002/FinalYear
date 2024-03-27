@@ -14,9 +14,12 @@ import Data from "./DataFetching/Data.js"
 import NewD from "./DataFetching/NewD.js"
 import LandingPage from './LoginForm/LandingPage.js';
 import AddRent from './BusinessLogic/AddRent.js';
+import Owner from './BusinessLogic/Owner.js';
+import Confirm from './BusinessLogic/Confirm.js';
+import ShowRent from './BusinessLogic/ShowRent.js';
+import ShowingData from './BusinessLogic/ShowingData.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <Router>
       <Routes>
         <Route path="/SelectOptions/settleInput/chooseOptions/getRecommendations" element={<Second></Second>}></Route>
@@ -31,9 +34,12 @@ root.render(
         <Route path="/SelectOptions/dineInput" element={<Data/>}></Route>
         <Route path="/values" element={<NewD/>}></Route>
         <Route path="/SelectOptions/addRentals" element={<AddRent/>}></Route>
+        <Route path="/SelectOptions/addRentals/FillForm" element={<Owner/>}></Route>
+        <Route path ="/SelectOptions/addRentals/FillForm/Confirm" element={<Confirm/>}></Route>
+        <Route path="/SelectOptions/addRentals/FillQuery" element={<ShowRent/>}></Route>
+        <Route path="/SelectOptions/addRentals/FillQuery/ShowData" element={<ShowingData/>}></Route>
       </Routes>
     </Router>
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

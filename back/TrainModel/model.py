@@ -14,13 +14,9 @@ def recommendation_model(inps):
     from fuzzywuzzy import process
     dataf=pd.read_csv("./TrainModel/Bengaluru_House_Data.csv")
     dataf.drop(columns=['area_type'], inplace=True)
-    def generate_contact_number():
-        return random.randint(8000000000, 9999999999)
-    dataf['contact_number'] = [generate_contact_number() for _ in range(len(dataf))]
     def convert_range_to_float(value):
-  
-        if isinstance(value, float):
-            return value
+        if isinstance(value, (int, float)):
+            return float(value)
         if '-' in value:
             range_values = value.split('-')
             try:
@@ -34,7 +30,8 @@ def recommendation_model(inps):
             try:
                 return float(value.strip())
             except ValueError:
-                return np.nan  
+                return np.nan
+    
     dataf['total_sqft'] = dataf['total_sqft'].apply(convert_range_to_float)
 
     for i in range(0, 13320):

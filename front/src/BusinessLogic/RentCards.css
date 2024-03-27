@@ -1,0 +1,18 @@
+.wholeCard{
+    width:400px;
+    height:600px;
+    background-color:white;
+    position:relative;
+}
+.infoPart{
+    height:300px;
+    width:400px;
+    position:absolute;
+    background-color:aquamarine;
+}
+.picPart{
+    height:300px;
+    width:400px;
+    background-color:white;
+    position:relative;
+}

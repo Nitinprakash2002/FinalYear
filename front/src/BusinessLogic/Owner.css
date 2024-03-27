@@ -1,0 +1,13 @@
+.formContainer{
+    width:500px;
+    height:900px;
+    background-color:white;
+    position:relative;
+    margin:0 auto;
+    top:30px;
+}
+.elementContainer{
+    position:absolute;
+    left:80px;
+    top:50px;
+}
