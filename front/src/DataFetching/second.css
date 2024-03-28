@@ -17,6 +17,8 @@
   gap:4%;
   padding:4%;
   margin:20px;
+  position:relative;
+  top:100px;
 }
 @media (max-width: 768px) {
     .card {
@@ -26,4 +28,8 @@
         width: 80%;
         padding: 4px;
     }
+}
+.message1{
+    position:relative;
+    top:150px;
 }

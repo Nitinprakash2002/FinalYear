@@ -47,7 +47,7 @@ function Second() {
       //  setRecData2(transported)
        setGetData1(houserent1);
        setGetData2(transported1);
-       setGetData3(datas1);
+      //  setGetData3(datas1);
        console.log(houserent1,transported1,datas1);
        setRent_tag("House Rent");
        setTransport_tag("Transportation");
@@ -73,17 +73,28 @@ function Second() {
  return(
   <div>
     <Navbar/>
-    <h1 style={{position:"relative",top:"200px"}}>{rent_tag}</h1>
+    <h1 style={{position:"relative",top:"200px"}}>{rent_tag}</h1><br></br>
       <div className="card">
-        {getData1.map((item,index)=>(
+        {getData1.length>0?(getData1.map((item,index)=>(
           <Third key={index} data1={item}></Third>
-        ))}
+        )
+        )):
+        (
+          <div className="message1">
+            <h2>Sorry!!!No Data Available</h2>
+          </div>)}
       </div>
-      <h1 style={{position:"relative",top:"100px"}}>{transport_tag}</h1>
+      <h1 style={{position:"relative",top:"200px"}}>{transport_tag}</h1><br></br>
       <div className="card">
-        {getData2.map((item1,index)=>(
+        {getData2.length>0?(getData2.map((item1,index)=>(
           <Transport key={index} data2={item1}></Transport>
-        ))}
+        )
+        )):
+        (
+          <div className="message1">
+            <h2>Sorry!!!No Data Available</h2>
+          </div>
+        )}
       </div>
       {/* <h1 style={{position:"relative",top:"100px"}}>{nam}</h1>
       <div>

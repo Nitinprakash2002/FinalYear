@@ -176,10 +176,10 @@ app.post('/getRecommendation2',(req,res)=>{
   });
 });
 app.post('/getRecommendation3',(req,res)=>{
-  const{tempPrice,locations}=req.body;
+  const{remainPrice,locations}=req.body;
   const userInput3={
     loacion:locations,
-    max_cost:parseFloat(tempPrice*10)
+    max_cost:parseFloat(remainPrice/30)
   }
   Promise.all([runPythonScript(JSON.stringify(userInput3),"./TrainModel/RFR.py")])
   .then(([datas]) => {
