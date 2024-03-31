@@ -5,7 +5,7 @@
   }
 .cards{
     width:350px;
-    height:350px;
+    height:400px;
     background-color:grey;
     color:white;
     font-size:80%;
@@ -20,8 +20,8 @@
     position:relative;
 }
 .infos{
-    width:300px;
-    height:100px;
+    width:350px;
+    height:170px;
     position:relative;
 }
 @media (max-width: 768px) {

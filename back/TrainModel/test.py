@@ -106,16 +106,17 @@
 
 # print("Processing completed. Modified dataset saved to 'modified_dataset.csv'.")
 
-import pandas as pd
 
-# Read the CSV file
-df = pd.read_csv('./Bengaluru_House_Data.csv')
+# import pandas as pd
 
-# Convert 'balcony' column from float to integer
-df['total_sqft'] = df['total_sqft'].round().astype(int)
+# # Read the CSV file
+# df = pd.read_csv('./Bengaluru_House_Data.csv')
 
-# Write the modified data back to the CSV file
-df.to_csv('./Bengaluru_House_Data.csv', index=False)
+# # Convert 'balcony' column from float to integer
+# df['total_sqft'] = df['total_sqft'].round().astype(int)
+
+# # Write the modified data back to the CSV file
+# df.to_csv('./Bengaluru_House_Data.csv', index=False)
 
 
 # import pandas as pd
@@ -133,4 +134,24 @@ df.to_csv('./Bengaluru_House_Data.csv', index=False)
 # # Write the modified data back to the CSV file
 # df.to_csv('./Bengaluru_House_Data.csv', index=False)
 
+
+import pandas as pd
+
+def add_image_directory(input_csv, output_csv):
+    # Read the dataset
+    df = pd.read_csv(input_csv)
+
+    # Generate image names from 1 to 25
+    image_names = [str(i % 25 + 1) for i in range(len(df))] 
+
+    # Add a new column with image directory paths
+    df['Image Directory'] = '/Transport_Pics/' + pd.Series(image_names) + '.jpg'
+    # Save the modified dataset to a new CSV file
+    df.to_csv(output_csv, index=False)
+    print("New dataset with image directory paths has been saved to:", output_csv)
+
+if __name__ == "__main__":
+    input_csv = "./Transportation.csv"  # Replace with the path to your input CSV file
+    output_csv = "./Transportation1.csv"  # Replace with the desired output CSV file path
+    add_image_directory(input_csv, output_csv)
 

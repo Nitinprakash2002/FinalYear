@@ -6,7 +6,7 @@ function Transport({data2})
         <div>
             <div className="cards">
                 <div className="pics">
-
+                    <img src={data2.Image_Directory} alt="not available" width="350px" height="230px"></img>
                 </div>
                 <div className="Infos"><ul>
                     <li>Bus Number: {data2['Bus Route']}</li>

@@ -84,6 +84,7 @@ function Second() {
             <h2>Sorry!!!No Data Available</h2>
           </div>)}
       </div>
+      <br></br>
       <h1 style={{position:"relative",top:"200px"}}>{transport_tag}</h1><br></br>
       <div className="card">
         {getData2.length>0?(getData2.map((item1,index)=>(

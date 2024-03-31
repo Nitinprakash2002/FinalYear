@@ -56,6 +56,8 @@ function Third({data1})
                     <li><strong>Location: </strong>{data1.location}</li>
                     <li><strong>Rent:</strong>{data1.price.toFixed(2)}k</li>
                     <li><strong>Contact No: +91 </strong>{data1.contact_number}</li>
+                    <li><strong>Email: </strong>{data1.email}</li>
+                    <li><strong>Address: </strong>{data1.address}</li>
                 </ul>
 
                 </div>
